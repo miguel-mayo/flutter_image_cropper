@@ -77,10 +77,10 @@
       
       if (ratioX != (id)[NSNull null] && ratioY != (id)[NSNull null]) {
           cropViewController.customAspectRatio = CGSizeMake([ratioX floatValue], [ratioY floatValue]);
-          cropViewController.resetAspectRatioEnabled = NO;
-          cropViewController.aspectRatioPickerButtonHidden = YES;
-          cropViewController.aspectRatioLockDimensionSwapEnabled = YES;
           cropViewController.aspectRatioLockEnabled = YES;
+          cropViewController.resetAspectRatioEnabled = NO;
+        //   cropViewController.aspectRatioPickerButtonHidden = YES;
+        //   cropViewController.aspectRatioLockDimensionSwapEnabled = YES;          
       }
       
       [_viewController presentViewController:cropViewController animated:YES completion:nil];
